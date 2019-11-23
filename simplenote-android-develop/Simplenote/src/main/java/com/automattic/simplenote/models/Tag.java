@@ -75,7 +75,8 @@ public class Tag extends BucketObject {
         String key = name.toLowerCase();
         int index = 0;
         if (!getSimperiumKey().equals(key)) {
-            if(key.contains("\'"))
+           
+	    if(key.contains("\'"))
             {
                 String sub = key;
                 for(int i = 0; i < key.length(); i++) {
